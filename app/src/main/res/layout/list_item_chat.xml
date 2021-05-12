@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/gray"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/name_server"
+        android:textStyle="normal|bold"
+        android:textColor="@color/white"
+        android:paddingBottom="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/backgraund_btn_kike"
+        android:layout_below="@+id/name_server"
+        android:layout_centerVertical="true"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:id="@+id/massage_server"
+        android:textStyle="normal"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        android:visibility="invisible"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/massage_server"
+        android:id="@+id/data_server"
+        android:textSize="11sp"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="9dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/backgraund_chat_client"
+        android:layout_below="@+id/name_server"
+        android:layout_centerVertical="true"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        android:id="@+id/massage_client"
+        android:textStyle="normal"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="7dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/massage_server"
+        android:id="@+id/data_client"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:textSize="11sp"
+        android:textStyle="normal"
+        android:layout_marginEnd="9dp"/>
+
+
+</RelativeLayout>

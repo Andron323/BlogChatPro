@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">PlayBet.Pro</string>
+    <string name="no_data_connekt">No data or connection</string>
+    <string name="info_first">Greetings to you on my blog! My name is Michael, in the world of betting I\'m known as the founder of the Info Plays team.</string>
+    <string name="info_second">Here I\'ll share free forecasts and show you how to make money.</string>
+    <string name="info_thert">My profit for the last 100 bets was 93%. Our team is ranked 2nd in the toptencappers.com ranking.</string>
+    <string name="macke_btn">Place a bat</string>
+    <string name="massage...">Message…</string>
+    <string name="chat">Chat</string>
+    <string name="info">Info</string>
+    <string name="browser">Browser</string>
+    <string name="news">News</string>
+    <string name="upload">Updated</string>
+    <string name="swipe_for_update_or_display_history">Swipe for update or display history</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

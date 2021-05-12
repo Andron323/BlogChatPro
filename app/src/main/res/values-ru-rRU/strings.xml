@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">PlayBet.Pro</string>
+    <string name="no_data_connekt">Нет данных или подключения</string>
+    <string name="info_first">Привет! В мире ставок на спорт я известен как T-50.SOC.L.В рейтинге bet-hub.com я занимаю 4 место.</string>
+    <string name="info_second">Здесь я буду делиться своими бесплатными прогнозами и покажу, как делать деньги на спорте.</string>
+    <string name="info_thert">Моя прибыль за последние 100 ставок составила +86.4%.</string>
+    <string name="macke_btn">Сделать ставку</string>
+    <string name="massage...">Сообщение…</string>
+    <string name="chat">Чат</string>
+    <string name="info">Инфо</string>
+    <string name="browser">Сайт</string>
+    <string name="news">Новости</string>
+    <string name="upload">Обновлено</string>
+    <string name="swipe_for_update_or_display_history">Свайпните для обновления или показа сообщений</string>
+
+
+</resources>

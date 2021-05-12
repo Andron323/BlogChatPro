@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".MainActivity">
+
+
+   <androidx.appcompat.widget.Toolbar
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/toolbar"
+       android:theme="@style/ThemeOverlay.AppCompat.Dark"
+       android:background="@drawable/backgraund_toolbar">
+
+      <TextView
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:id="@+id/name_of_activity"
+          android:textColor="@color/white"
+          android:textSize="28sp"
+          android:textStyle="bold"
+          android:layout_alignParentStart="true"
+          android:layout_alignParentTop="true"
+          android:layout_margin="8dp"
+           />
+   </androidx.appcompat.widget.Toolbar>
+
+   <com.google.android.material.floatingactionbutton.FloatingActionButton
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/btn_info"
+       android:clickable="true"
+       android:src="@drawable/ic_info"
+       android:layout_alignParentTop="true"
+       android:layout_alignParentEnd="true"
+       android:tint="@color/white"
+       app:fabSize="normal"
+       app:backgroundTint="@color/dark_gray" />
+
+   <com.google.android.material.floatingactionbutton.FloatingActionButton
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/btn_close"
+       android:clickable="true"
+       android:src="@drawable/ic_close"
+       android:layout_alignParentTop="true"
+       android:layout_alignParentEnd="true"
+       android:tint="@color/white"
+       android:visibility="invisible"
+       app:fabSize="normal"
+       app:backgroundTint="@color/dark_gray" />
+
+   <de.hdodenhof.circleimageview.CircleImageView
+       android:id="@+id/avatar_image_chat"
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:layout_alignParentTop="true"
+       android:layout_centerHorizontal="true"
+       android:layout_above="@+id/swiperefresh_main"
+       android:padding="5dp"
+       android:visibility="invisible"
+       android:src="@drawable/avatar_chat" />
+
+
+   <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+       android:id="@+id/swiperefresh_main"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_above="@+id/bottom_nav_bar"
+       android:layout_below="@+id/toolbar">
+
+   <WebView
+       android:id="@+id/webView2"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_above="@+id/bottom_nav_bar"
+       android:layout_below="@+id/toolbar"
+       android:padding="5dp"/>
+   </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+   <FrameLayout
+       android:id="@+id/fragment_container"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_above="@+id/bottom_nav_bar"
+       android:layout_below="@+id/toolbar"
+       />
+
+
+   <com.ismaeldivita.chipnavigation.ChipNavigationBar
+       android:id="@+id/bottom_nav_bar"
+       android:layout_width="match_parent"
+       android:layout_height="70dp"
+       android:layout_alignParentBottom="true"
+       android:background="@drawable/backgraund_bottom_nav"
+       android:elevation="16dp"
+       app:cnb_menuResource="@menu/bottom_menu"
+       app:cnb_unselectedColor="@color/white"
+       android:padding="8dp">
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:clickable="true"
+          android:id="@+id/indikator"
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:paddingRight="10dp"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:visibility="gone"
+          android:src="@drawable/indikator" />
+   </com.ismaeldivita.chipnavigation.ChipNavigationBar>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentStart="true"
+       android:background="@drawable/backgraund_push"
+       android:layout_marginTop="40dp"
+       android:layout_marginLeft="50dp"
+       android:layout_marginRight="50dp"
+       android:visibility="gone"
+       android:clickable="true"
+       android:id="@+id/push_layout">
+
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/avatar_image_push"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:layout_alignParentLeft="true"
+          android:layout_centerVertical="true"
+          android:padding="5dp"
+          android:layout_marginLeft="10dp"
+          android:src="@drawable/avatar_chat" />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_toRightOf="@+id/avatar_image_push"
+          android:textColor="@color/white"
+          android:padding="10dp"
+          android:id="@+id/massage_push"
+          android:textStyle="normal"
+          android:layout_marginStart="7dp"
+          android:layout_marginEnd="7dp"
+          />
+   </RelativeLayout>
+
+</RelativeLayout>

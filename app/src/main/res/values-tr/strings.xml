@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">PlayBet.Pro</string>
+    <string name="no_data_connekt">Veri veya bağlantı yok</string>
+    <string name="info_first">Kazanmak isteyenler , Bloguma hoş geldiniz, ! Benim adım Hakan, spor bahisleri dünyasında Info Plays takımının kurucusu olarak tanınıyorum.</string>
+    <string name="info_second">Burada ücretsiz tahminleri paylaşacağım ve size spor bahislerinden nasıl para kazanılacağını göstereceğim.</string>
+    <string name="info_thert">Son 100 bahis için kazancım %93 . Toptencappers.com sıralamasında ekibimiz 2. sırada yer alıyor.</string>
+    <string name="macke_btn">Bahis parası koy</string>
+    <string name="massage...">İleti…</string>
+    <string name="chat">Sohbet</string>
+    <string name="info">Bilgi</string>
+    <string name="browser">Tarayıcı</string>
+    <string name="news">Haberler</string>
+    <string name="upload">Güncellenmiş</string>
+    <string name="swipe_for_update_or_display_history">Güncelleme veya görüntüleme geçmişi için kaydırın</string>
+
+
+</resources>
